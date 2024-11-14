@@ -1,0 +1,205 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .grading-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+} */
+.grading-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ad4545;
+    width: 42vw;
+    height: 40vh;
+    margin-top: 100px;
+    border-radius: 5px;
+    box-shadow: 10px 0px 50px 0px #333;
+}
+.grading-container > h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+.grading-container > div > input{
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 30vw;
+    outline: blue ;
+    border: none;
+    border-radius: 4px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    
+}
+.inputBox{
+    position: relative;
+    margin-right: 85px;
+}
+.inputBox > label{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.inputBox > button{
+    position: absolute;
+    bottom: 20px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    /* margin-left: -10px; */
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+    outline: none;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+}
+.gradeOutput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36vw;
+    height: 8vh;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    border: 2px solid black;
+}
+@media screen and (max-width:1024px){
+    .grading-container{
+        width: 52vw;
+    }
+    .grading-container > h2{
+        font-weight: 800;
+        font-size: 28px;
+    }
+    .gradeOutput{
+        width: 40vw;
+    }
+    .grading-container > div > input{
+        font-weight: 600;
+        font-size: 24px;
+    }
+    .inputBox > button{
+        font-size: 24px;
+    }
+    .inputBox{
+        margin-right: 110px;
+    }
+}
+
+@media screen and (max-width:980px){
+    .grading-container > h2 {
+        font-weight: 800;
+        font-size: 23px;
+    }
+    .grading-container > div > input{
+        width: 28vw;
+    }
+    .gradeOutput {
+        width: 39vw;
+    }
+}
+
+@media screen and (max-width:768px){
+    .grading-container > h2 {
+        font-weight: 800;
+        font-size: 18px;
+    }
+    .grading-container > div > input{
+        width: 24vw;
+        font-size: 18px;
+    }
+    .inputBox > button {
+        font-size: 18px;
+    }
+    .gradeOutput {
+        width: 38vw;
+    }
+    .inputBox{
+        margin-right: 90px;
+    }
+}
+@media screen and (max-width:430px){
+    .grading-container > h2 {
+        font-weight: 800;
+        font-size: 16px;
+    }
+    .grading-container {
+        width: 70vw;
+    }
+    .grading-container > div > input{
+        width: 33vw;
+        font-size: 14px;
+    }
+    .inputBox > button {
+        font-size: 14px;
+        padding: 10px 10px;
+    }
+    .gradeOutput {
+        width: 35vw;
+        font-size: 14px;
+    }
+    .inputBox{
+        margin-right: 60px;
+    }
+}
+@media screen and (max-width:375px){
+    .grading-container > h2 {
+        font-weight: 800;
+        font-size: 14px;
+    }
+    .grading-container > div > input{
+        width: 35vw;
+        font-size: 14px;
+    }
+    .inputBox > button {
+        font-size: 14px;
+    }
+    .gradeOutput {
+        width: 33vw;
+    }
+    .inputBox{
+        margin-right: 70px;
+    }
+}
+@media screen and (max-width:320px){
+    .grading-container > h2 {
+        font-weight: 800;
+        font-size: 12px;
+    }
+    .grading-container > div > input{
+        width: 35vw;
+        font-size: 12px;
+    }
+    .inputBox > button {
+        font-size: 12px;
+    }
+    .gradeOutput {
+        width: 31vw;
+    }
+    .inputBox{
+        margin-right: 60px;
+    }
+}
